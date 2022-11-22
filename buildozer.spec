@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = SampleApp
+title = MegaApp
 
 # (str) Package name
-package.name = sampleapk
+package.name = megaapk
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.novfensec
@@ -47,7 +47,7 @@ requirements = python3,kivy==2.1.0,kivymd==0.104.2,pillow==8.3.1
 presplash.filename = %(source.dir)s/images/presplash.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/images/favicon.png
+icon.filename = %(source.dir)s/images/logo blazer off.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = portrait
