@@ -1,0 +1,1743 @@
+
+WindowManager:
+    markup: True
+    MDScreen:
+
+    LoginScreen:
+
+    Tela_PrincipalScreen:
+
+    tela_mega_digitos:
+
+    tela_splas_pop:
+
+    Historico:
+
+    error404:
+
+    dinheiro_apostado:
+
+    botizao_infor:
+
+<dinheiro_apostado>:
+    name: "tela_money"
+    font_name: 'Roboto'
+    font_size: 60
+    markup: True
+    size_hint: .7, .8
+    md_bg_color: 0.06, 0.10, 0.14
+    line_color: (0.61, 0.68, 0.69)
+    pos_hint: {'center_x': .5, 'center_y': .5}
+
+
+
+    MDBoxLayout:
+        md_bg_color: 0.06, 0.10, 0.14
+        line_color: (0.61, 0.68, 0.69)
+        orientation: "vertical"
+        spacing: 1
+
+        MDIconButton:
+            theme_text_color: 'Custom'
+            icon: 'close'
+            text_color: 1, 1, 1, 1
+            on_release: root.desativar_caixa_dinheiro()
+
+        MDBoxLayout:
+            pos_hint: {'center_x': 0.5, 'center_y': 0.75}
+            orientation: "vertical"
+            padding: 1
+            MDBoxLayout:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.75}
+                orientation: "horizontal"
+                padding: 3
+                MDBoxLayout:
+                    size_hint: (0.5, 0.8)
+                    elevation: 3
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.70}
+                    orientation: "vertical"
+                    padding: 0,1
+
+                    MDLabel:
+                        md_bg_color: .61, 0.68, 0.69
+                        size_hint: (0.9, 0.04)
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.70}
+                        halign: "center"
+                        text: "CACHE G0:"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: 0.00, 0.00, 0.00
+                        font_size: "12sp"
+
+                MDBoxLayout:
+                    size_hint: (0.5, 0.8)
+                    elevation: 1
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.70}
+                    orientation: "vertical"
+                    padding: 0,1
+
+                    MDLabel:
+                        id: VALOR_G0
+                        line_color: (0.61, 0.68, 0.69)
+                        size_hint: (0.9, 0.04)
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.70}
+                        halign: "center"
+                        text: "G0"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: 0.61, 0.68, 0.69
+                        font_size: "12sp"
+            MDBoxLayout:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+                orientation: "horizontal"
+                padding: 3
+                MDBoxLayout:
+                    size_hint: (0.5, 0.8)
+                    elevation: 3
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.68}
+                    orientation: "vertical"
+                    padding: 0,1
+
+                    MDLabel:
+                        md_bg_color: .61, 0.68, 0.69
+                        size_hint: (0.9, 0.04)
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+                        halign: "center"
+                        text: "CACHE G1:"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: 0.00, 0.00, 0.00
+                        font_size: "12sp"
+
+                MDBoxLayout:
+                    size_hint: (0.5, 0.8)
+                    elevation: 3
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.68}
+                    orientation: "vertical"
+                    padding: 0,1
+
+                    MDLabel:
+                        id: VALOR_G1
+                        line_color: (0.61, 0.68, 0.69)
+                        size_hint: (0.9, 0.04)
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+                        halign: "center"
+                        text: "G1"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: 0.61, 0.68, 0.69
+                        font_size: "12sp"
+            MDBoxLayout:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+                orientation: "horizontal"
+                padding: 3
+                MDBoxLayout:
+                    size_hint: (0.5, 0.8)
+                    elevation: 3
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.68}
+                    orientation: "vertical"
+                    padding: 0,1
+
+                    MDLabel:
+                        md_bg_color: .61, 0.68, 0.69
+                        size_hint: (0.9, 0.04)
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+                        halign: "center"
+                        text: "CACHE G2:"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: 0.00, 0.00, 0.00
+                        font_size: "12sp"
+
+                MDBoxLayout:
+                    size_hint: (0.5, 0.8)
+                    elevation: 1
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.68}
+                    orientation: "vertical"
+                    padding: 0,1
+
+                    MDLabel:
+                        id: VALOR_G2
+                        line_color: (0.61, 0.68, 0.69)
+                        size_hint: (0.9, 0.04)
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+                        halign: "center"
+                        text: "G2"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: 0.61, 0.68, 0.69
+                        font_size: "12sp"
+            MDBoxLayout:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+                orientation: "horizontal"
+                padding: 3
+                MDBoxLayout:
+                    size_hint: (0.5, 0.8)
+                    elevation: 3
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.68}
+                    orientation: "vertical"
+                    padding: 0,1
+
+                    MDLabel:
+                        md_bg_color: .61, 0.68, 0.69
+                        size_hint: (0.9, 0.04)
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+                        halign: "center"
+                        text: "BRANCO G0:"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: 0.00, 0.00, 0.00
+                        font_size: "12sp"
+
+                MDBoxLayout:
+                    size_hint: (0.5, 0.8)
+                    elevation: 1
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.68}
+                    orientation: "vertical"
+                    padding: 0,1
+
+                    MDLabel:
+                        id: VALOR_BRANCOG0
+                        line_color: (0.61, 0.68, 0.69)
+                        size_hint: (0.9, 0.04)
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+                        halign: "center"
+                        text: "G0"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: 0.61, 0.68, 0.69
+                        font_size: "12sp"
+            MDBoxLayout:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+                orientation: "horizontal"
+                padding: 1
+                MDBoxLayout:
+                    size_hint: (0.5, 0.8)
+                    elevation: 1
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.68}
+                    orientation: "vertical"
+                    padding: 0,1
+
+                    MDLabel:
+                        md_bg_color: .61, 0.68, 0.69
+                        size_hint: (0.9, 0.04)
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+                        halign: "center"
+                        text: "BRANCO G1:"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: 0.00, 0.00, 0.00
+                        font_size: "12sp"
+
+                MDBoxLayout:
+                    size_hint: (0.5, 0.8)
+                    elevation: 1
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.68}
+                    orientation: "vertical"
+                    padding: 0,1
+
+                    MDLabel:
+                        id: VALOR_BRANCOG1
+                        line_color: (0.61, 0.68, 0.69)
+                        size_hint: (0.9, 0.04)
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+                        halign: "center"
+                        text: "G1"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: 0.61, 0.68, 0.69
+                        font_size: "12sp"
+
+            MDBoxLayout:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+                orientation: "horizontal"
+                padding: 3
+                MDBoxLayout:
+                    size_hint: (0.5, 0.8)
+                    elevation: 1
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.68}
+                    orientation: "vertical"
+                    padding: 0,1
+
+                    MDLabel:
+                        md_bg_color: .61, 0.68, 0.69
+                        size_hint: (0.9, 0.04)
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+                        halign: "center"
+                        text: "BRANCO G2:"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: 0.00, 0.00, 0.00
+                        font_size: "12sp"
+
+                MDBoxLayout:
+                    size_hint: (0.5, 0.8)
+                    elevation: 1
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.68}
+                    orientation: "vertical"
+                    padding: 0,1
+
+                    MDLabel:
+                        id: VALOR_BRANCOG2
+                        line_color: (0.61, 0.68, 0.69)
+                        size_hint: (0.9, 0.04)
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+                        halign: "center"
+                        text: "G2"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: 0.61, 0.68, 0.69
+                        font_size: "12sp"
+
+            MDBoxLayout:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.62}
+                orientation: "horizontal"
+                padding: 3
+                MDBoxLayout:
+                    size_hint: (0.5, 0.8)
+                    elevation: 1
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.62}
+                    orientation: "vertical"
+                    padding: 0,1
+                    MDLabel:
+                        id: VITORIAS_GERAL
+                        line_color: (0.61, 0.68, 0.69)
+                        size_hint: (0.9, 0.04)
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.62}
+                        halign: "center"
+                        text: "G1 + G2 + G3"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: 0.61, 0.68, 0.69
+                        font_size: "12sp"
+
+            MDBoxLayout:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.54}
+                orientation: "horizontal"
+                padding: 3
+                MDBoxLayout:
+                    size_hint: (0.5, 0.8)
+                    elevation: 1
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.54}
+                    orientation: "vertical"
+                    padding: 0,1
+                    MDLabel:
+                        id: bancablaze
+                        line_color: (0.61, 0.68, 0.69)
+                        size_hint: (0.9, 0.04)
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.54}
+                        halign: "center"
+                        text: "banca"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: 0.61, 0.68, 0.69
+                        font_size: "12sp"
+
+
+<botizao_infor>:
+    name: "tela_botizao"
+    font_name: 'Roboto'
+    font_size: 60
+    markup: True
+    size_hint: .7, .5
+    md_bg_color: 0.06, 0.10, 0.14
+    line_color: .61, 0.68, 0.69
+    pos_hint: {'center_x': .5, 'center_y': .5}
+    MDBoxLayout:
+        #md_bg_color: 0.06, 0.10, 0.14
+        orientation: "vertical"
+        md_bg_color: 0.06, 0.10, 0.14
+        line_color: .61, 0.68, 0.69
+        spacing: 8
+
+        MDIconButton:
+            theme_text_color: 'Custom'
+            icon: 'close'
+            text_color: 1, 1, 1, 1
+            on_release: root.desativar_caixa_bot()
+
+        MDCard:
+            size_hint_y: .1
+            orientation: "vertical"
+            pos_hint: {"center_x": .5, "center_y": .45}
+            size_hint_y: .1
+            padding: [25, 0, 25, 0]
+            md_bg_color: 0.06, 0.10, 0.14
+            line_color_normal: (0,1,0,1)
+
+
+            MDBoxLayout:
+                halign: "center"
+                orientation: "vertical"
+                spacing:6
+
+                MDLabel:
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.78}
+                    width: 100
+                    font_size: "12sp"
+                    mode: 'rectangle'
+
+                MDTextField:
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.72}
+                    id: chat_id_input
+                    width: 100
+                    font_size: "12sp"
+                    hint_text: 'USAR ID (GRUPO):'
+                    mode: 'rectangle'
+                    color: (0,1,1,1)
+                    line_color_normal: (0,1,0,1)
+                    text_color: (.95,.44,.49,1)
+
+                MDTextField:
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.67}
+                    id: api_key_input
+                    width: 100
+                    font_size: "12sp"
+                    hint_text: 'CHAVE BOT (KEY):'
+                    mode: 'rectangle'
+                    color: (0,1,1,1)
+                    line_color_normal: (0,1,0,1)
+                    text_color: (.95,.44,.49,1)
+
+                MDLabel:
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.65}
+                    width: 100
+                    font_size: "12sp"
+                    mode: 'rectangle'
+
+
+                ButtonFocus:
+                    pos_hint: {'center_x': .5, 'center_y': .35}
+                    size_hint_x: .9
+                    text: 'INICIAR BOT!'
+                    md_bg_color: 0.95, 0.17, 0.30
+                    text_color: (255,255,255)
+                    line_color: (0.95, 0.17, 0.30)
+                    bold: True
+                    on_press: root.USAR_BOT()
+                MDLabel:
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.32}
+                    width: 100
+                    font_size: "12sp"
+                    mode: 'rectangle'
+
+<error404>:
+    name: "error404net"
+    font_name: 'Roboto'
+    font_size: 60
+    markup: True
+
+    ScrollView:
+        line_color: (.95,.44,.49,1)
+        size: self.size
+        pos: self.pos
+
+
+        MDFloatLayout:
+            line_color: (0.95, 0.17, 0.30)
+            md_bg_color: 0.06, 0.10, 0.14
+            orientation: "vertical"
+
+
+
+
+            MDLabel:
+                text: "_____________________ ATENÇÃO ______________________"
+                halign: "center"
+                font_size: "16sp"
+                bold: True
+                pos_hint: {'center_x': 0.50, 'center_y': 0.75}
+
+            MDLabel:
+                font_size: "12sp"
+                bold: True
+                halign: "center"
+                pos_hint: {'center_x': 0.50, 'center_y': 0.65}
+                text: "Não foi possivel conectar-se a internet, verifique se sua rede esta ativa. Essa limitação afeta o uso do sistema de analises."
+
+
+
+<Historico>:
+    name: "Tela_Historico"
+    font_name: 'Roboto'
+    font_size: 60
+    markup: True
+
+    ScrollView:
+        line_color: (.95,.44,.49,1)
+        size: self.size
+        pos: self.pos
+
+        MDFloatLayout:
+            md_bg_color: 0.06, 0.10, 0.14
+            orientation: "vertical"
+
+            MDCard:
+                orientation: "vertical"
+                pos_hint: {'center_x': 0.50, 'center_y': 0.96}
+                size_hint_y: .1
+                md_bg_color: 0.95, 0.17, 0.30
+                text_color: (255,255,255)
+                line_color: (0.95, 0.17, 0.30)
+                bold: True
+                elevation: 3
+
+                MDIconButton:
+                    size_hint_x: .1
+                    icon: "keyboard-backspace"
+                    on_press: root.fechar_card_7()
+                    focus_color: app.theme_cls.accent_color
+                    unfocus_color: app.theme_cls.primary_color
+
+            MDLabel:
+                halign: "center"
+                text: " HISTORICO GERAL"
+                theme_text_color: 'Custom'
+                text_color: 255,0,0
+                elevation: 1
+                font_size: "16sp"
+                pos_hint: {'center_x': 0.50, 'center_y': 0.96}
+
+            MDLabel:
+                halign: "center"
+                pos_hint: {'center_x': 0.50, 'center_y': 0.93}
+                text: "Informações coletadas"
+                theme_text_color: 'Custom'
+                text_color: 255,0,0
+                font_size: "12sp"
+
+            Image:
+                source: "app_icon_xxxhdpi.png"
+                pos_hint: {'center_x': 0.5, 'center_y': 0.84}
+                size_hint: (0.2, 0.1)
+                allow_stretch: True
+                elevation: 1
+            MDBoxLayout:
+                #md_bg_color: 0.95, 0.17, 0.30
+                orientation: "vertical"
+                line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.50, 'center_y': 0.75}
+                size_hint: (0.2, 0.03)
+
+                MDLabel:
+                    id: resultado1
+                    halign: "center"
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.65}
+                    text: "ENTRADAS:"
+                    theme_text_color: 'Custom'
+                    text_color: .61, 0.68, 0.69
+                    font_size: "12sp"
+                    bold: True
+
+            MDBoxLayout:
+                #md_bg_color: 0.95, 0.17, 0.30
+                orientation: "vertical"
+                line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.50, 'center_y': 0.72}
+                size_hint: (0.2, 0.03)
+                MDLabel:
+                    id: ENTRADAS
+                    halign: "center"
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.62}
+                    text: "Esperando.."
+                    theme_text_color: 'Custom'
+                    text_color: .61, 0.68, 0.69
+                    font_size: "12sp"
+                    bold: True
+
+            MDBoxLayout:
+                #md_bg_color: 0.95, 0.17, 0.30
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.20, 'center_y': 0.66}
+                size_hint: (0.2, 0.03)
+
+
+
+                MDLabel:
+                    md_bg_color: 0.00, 0.60, 0.22
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.66}
+                    text: "VITORIAS G0:"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+            MDBoxLayout:
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                md_bg_color: 1.00, 0.87, 0.00
+                pos_hint: {'center_x': 0.5, 'center_y': 0.66}
+                size_hint: (0.2, 0.03)
+                MDLabel:
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.66}
+                    text: "VITORIAS G1:"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+
+            MDBoxLayout:
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                md_bg_color: 1.00, 0.40, 0.00
+                pos_hint: {'center_x': 0.80, 'center_y': 0.66}
+                size_hint: (0.2, 0.03)
+                MDLabel:
+                    id: entradas_disponiveis
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.66}
+                    text: "VITORIAS G2:"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+            MDBoxLayout:
+                md_bg_color: 0.00, 0.60, 0.22
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.20, 'center_y': 0.61}
+                size_hint: (0.2, 0.03)
+                MDLabel:
+                    id: VITORIAG0
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.61}
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+            MDBoxLayout:
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                md_bg_color: 1.00, 0.87, 0.00
+                pos_hint: {'center_x': 0.5, 'center_y': 0.61}
+                size_hint: (0.2, 0.03)
+
+            MDLabel:
+                id: VITORIAG1
+                halign: "center"
+                pos_hint: {'center_x': 0.5, 'center_y': 0.61}
+                theme_text_color: 'Custom'
+                bold: True
+                text_color: 0.00, 0.00, 0.00
+                font_size: "12sp"
+
+            MDBoxLayout:
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                md_bg_color: 1.00, 0.40, 0.00
+                pos_hint: {'center_x': 0.80, 'center_y': 0.61}
+                size_hint: (0.2, 0.03)
+                MDLabel:
+                    id: VITORIAG2
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.61}
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+            MDBoxLayout:
+                md_bg_color: 1.00, 1.00, 1.00
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.20, 'center_y': 0.52}
+                size_hint: (0.2, 0.03)
+
+
+                MDLabel:
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.52}
+                    text: "BRANCO G0:"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+            MDBoxLayout:
+                md_bg_color: 1.00, 1.00, 1.00
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.5, 'center_y': 0.52}
+                size_hint: (0.2, 0.03)
+
+                MDLabel:
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.52}
+                    text: "BRANCO G1:"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+            MDBoxLayout:
+                md_bg_color: 1.00, 1.00, 1.00
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.80, 'center_y': 0.52}
+                size_hint: (0.2, 0.03)
+
+                MDLabel:
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.52}
+                    text: "BRANCO G2:"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+
+
+            MDBoxLayout:
+                md_bg_color: 1.00, 1.00, 1.00
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.20, 'center_y': 0.47}
+                size_hint: (0.2, 0.03)
+                MDLabel:
+                    id: VITORIABRANCOG0
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.47}
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+            MDBoxLayout:
+                md_bg_color: 1.00, 1.00, 1.00
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.5, 'center_y': 0.47}
+                size_hint: (0.2, 0.03)
+                MDLabel:
+                    id: VITORIABRANCOG1
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.47}
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+
+            MDBoxLayout:
+                md_bg_color: 1.00, 1.00, 1.00
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.80, 'center_y': 0.47}
+                size_hint: (0.2, 0.03)
+                MDLabel:
+                    id: VITORIABRANCOG2
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.47}
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+
+
+            MDBoxLayout:
+                md_bg_color: 0.87, 0.25, 0.19
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.20, 'center_y': 0.37}
+                size_hint: (0.2, 0.03)
+
+                MDLabel:
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.37}
+                    text: "LOSS PRETO:"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+
+            MDBoxLayout:
+                md_bg_color: 0.87, 0.25, 0.19
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.80, 'center_y': 0.37}
+                size_hint: (0.2, 0.03)
+
+                MDLabel:
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.37}
+                    text: "LOSS RED:"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+
+
+            MDBoxLayout:
+                md_bg_color: 0.87, 0.25, 0.19
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.5, 'center_y': 0.33}
+                size_hint: (0.2, 0.03)
+
+                MDLabel:
+                    id: LOSSGERAL
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.33}
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+            MDBoxLayout:
+                md_bg_color: 0.87, 0.25, 0.19
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.80, 'center_y': 0.33}
+                size_hint: (0.2, 0.03)
+                MDLabel:
+                    id: LOSSRED
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.33}
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+            MDBoxLayout:
+                md_bg_color: 0.87, 0.25, 0.19
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.20, 'center_y': 0.33}
+                size_hint: (0.2, 0.03)
+
+                MDLabel:
+                    id: LOSSBLACK
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.33}
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+            MDBoxLayout:
+                md_bg_color: 0.87, 0.25, 0.19
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.5, 'center_y': 0.37}
+                size_hint: (0.2, 0.03)
+
+                MDLabel:
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.37}
+                    text: "LOSS:"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+            MDBoxLayout:
+                md_bg_color: 0.10, 0.14, 0.18
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.5, 'center_y': 0.26}
+                size_hint: (0.2, 0.03)
+                MDLabel:
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.26}
+                    text: "SAIDAS:"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: .61, 0.68, 0.69
+                    font_size: "12sp"
+
+            MDBoxLayout:
+                md_bg_color: 0.00, 0.00, 0.00
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.20, 'center_y': 0.20}
+                size_hint: (0.2, 0.03)
+                MDLabel:
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.20}
+                    text: "PRETOS:"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 1.00, 1.00, 1.00
+                    font_size: "12sp"
+
+
+            MDBoxLayout:
+                md_bg_color: 1.00, 1.00, 1.00
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.5, 'center_y': 0.20}
+                size_hint: (0.2, 0.03)
+                MDLabel:
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.20}
+                    text: "BRANCOS:"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+            MDBoxLayout:
+                md_bg_color: 0.87, 0.25, 0.19
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.80, 'center_y': 0.20}
+                size_hint: (0.2, 0.03)
+
+                MDLabel:
+                    text: "VERMELHO:"
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.20}
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+            MDBoxLayout:
+                md_bg_color: 0.00, 0.00, 0.00
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.20, 'center_y': 0.15}
+                size_hint: (0.2, 0.03)
+
+                MDLabel:
+                    id: PRETOSAINDO
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.15}
+                    text: "PRETOS:"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 1.00, 1.00, 1.00
+                    font_size: "12sp"
+
+            MDBoxLayout:
+                md_bg_color: 1.00, 1.00, 1.00
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.5, 'center_y': 0.15}
+                size_hint: (0.2, 0.03)
+
+                MDLabel:
+                    id: BRANCOSAINDO
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.15}
+                    text: "BRANCOS:"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+
+
+            MDBoxLayout:
+                md_bg_color: 0.87, 0.25, 0.19
+                orientation: "vertical"
+                #line_color: (0.95, 0.17, 0.30)
+                pos_hint: {'center_x': 0.80, 'center_y': 0.15}
+                size_hint: (0.2, 0.03)
+                MDLabel:
+                    id: VERMELHOSAINDO
+                    text: "VERMELHO:"
+                    halign: "center"
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.15}
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: 0.00, 0.00, 0.00
+                    font_size: "12sp"
+
+
+            ButtonFocus:
+                id: start_stop
+                pos_hint: {'center_x': .5, 'center_y': .05}
+                size_hint_x: .9
+                text: 'USAR BOT'
+                md_bg_color: 0.13, 0.65, 0.95
+                text_color: (255,255,255)
+                line_color: (0.13, 0.65, 0.95)
+                bold: True
+                on_press: root.abrir_card_bot()
+
+
+<MDScreen>:
+    name: "splash"
+
+
+    # Start the progress bar animation when the screen is active
+    on_enter: self.ids.progress.start()
+    MDBoxLayout:
+        md_bg_color: 0.10, 0.14, 0.18
+        # Add float layout
+        MDFloatLayout:
+            md_bg_color: 0.10, 0.14, 0.18
+
+            # Add Gif image
+            Image:
+                source:'app_icon_xxxhdpi.png'
+                allow_stretch: True
+                anim_delay: 0
+                size_hint: (0.5, 0.5)
+                pos_hint: {'center_x': 0.50, 'center_y': 0.75}
+                # anim_loop: 1
+                anim_reset: True
+
+            MDLabel:
+                text: "CARREGANDO DADOS..."
+                pos_hint: {'center_x': 0.5, 'center_y': 0.45}
+                halign: 'center'
+                font_style: "H5"
+                bold: True
+                theme_text_color: 'Custom'
+                text_color: 139,0,0
+                font_size: "20sp"
+            # Add box layout
+            MDTextButton:
+                pos_hint: {'center_x': .5, 'center_y': .38}
+                text: 'Aguarde o carregamento de recursos.. \n'
+                font_style: "Caption"
+                text_color: (0.02, 0.83, 0.49)
+
+            BoxLayout:
+                # Set box position
+                md_bg_color: 0.10, 0.14, 0.18
+                pos_hint:{'center_y':.3, 'center_x':.5}
+                padding: "10dp"
+                # set width to 70%
+                size_hint_x: .7
+
+
+
+
+
+<LoginScreen>:
+    name: "login_screen"
+    font_name: 'Roboto'
+    font_size: 60
+    markup: True
+
+    MDFloatLayout:
+        orientation: "vertical"
+        padding: 0,1
+        md_bg_color: 0.10, 0.14, 0.18
+
+        Image:
+            source: "logo blazer off.png"
+            allow_stretch: True
+            size_hint: (0.5, 0.5)
+            pos_hint: {'center_x': 0.50, 'center_y': 0.82}
+
+
+        MDLabel:
+            text: "Gestao e Qualidade"
+            pos_hint: {'center_x': 0.5, 'center_y': 0.65}
+            halign: 'center'
+            font_style: "H5"
+            bold: True
+            theme_text_color: 'Custom'
+            text_color: 139,0,0
+            font_size: "20sp"
+
+
+
+        MDTextButton:
+            pos_hint: {'center_x': .5, 'center_y': .60}
+            text: 'faça seu login \n'
+            font_style: "Caption"
+            text_color: (0.02, 0.83, 0.49)
+            on_release: root.comprar_acesso()
+
+        MDTextField:
+            id: uname_input
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            size_hint_x: .8
+            icon_right: "email"
+            hint_text: 'Usuario'
+            mode: 'rectangle'
+            color: (139,0,0)
+            line_color_normal: (139,0,0)
+            text_color: (.95,.44,.49,1)
+
+
+        MDTextField:
+            id: pword_input
+            icon_right: "eye-off"
+            password: True
+            pos_hint: {'center_x': .5, 'center_y': .38}
+            size_hint_x: .8
+            hint_text: 'senha'
+            mode: 'rectangle'
+            color: (139,0,0)
+            line_color_normal: (139,0,0)
+            text_color: (.95,.44,.49,1)
+
+        MDRectangleFlatButton:
+            text: "Acessar"
+            font_size: 20
+            elevation: 1
+            icon_right: "email"
+            md_bg_color: 139, 0.1, 0
+            text_color: (.1,.1,.1,1)
+            line_color: (139,0,0)
+            theme_text_color: 'Custom'
+            pos_hint: {"center_x": .5, "center_y": .25}
+            on_press: root.validate_user()
+
+        MDTextButton:
+            pos_hint: {'center_x': .5, 'center_y': .12}
+            text: 'Adquirir login \n'
+            font_style: "Caption"
+            on_release: root.comprar_acesso()
+            Widget:
+                size_hint_y: .6
+
+
+
+
+
+
+<Tela_PrincipalScreen>:
+    name: "Tela_PrincipalScreen"
+    font_name: 'Roboto'
+    font_size: 60
+    markup: True
+
+    ScrollView:
+        line_color: (.95,.44,.49,1)
+        size: self.size
+        pos: self.pos
+
+        MDFloatLayout:
+            md_bg_color: 0.10, 0.14, 0.18
+            orientation: "vertical"
+
+
+
+            MDCard:
+                orientation: "vertical"
+                pos_hint: {'center_x': 0.50, 'center_y': 0.95}
+                size_hint_y: .1
+                md_bg_color: 0.95, 0.17, 0.30
+                text_color: (255,255,255)
+                line_color: (0.95, 0.17, 0.30)
+                bold: True
+
+
+                MDLabel:
+                    id: nome
+                    halign: "center"
+                    text: "\n Seja Bem Vindo"
+                    theme_text_color: 'Custom'
+                    text_color: 255,0,0
+                    font_size: "20sp"
+
+                MDLabel:
+                    halign: "center"
+                    text: "Administre do seu jeito"
+                    theme_text_color: 'Custom'
+                    text_color: 255,0,0
+                    font_size: "12sp"
+
+
+            Image:
+                pos_hint: {'center_x': 0.50, 'center_y': 0.82}
+                source: "logo blazer off.png"
+                size_hint: (0.4, 0.4)
+                allow_stretch: True
+
+            MDLabel:
+                pos_hint: {'center_x': 0.50, 'center_y': 0.72}
+                halign: "center"
+                text: "ESCOLHA O NUMERO DE SEQUENCIA:"
+                font_size: 15
+                theme_text_color: "Custom"
+                text_color: (1,1,1,1)
+
+            ButtonFocus:
+                #bold: True
+                elevation: 1
+                size_hint_x: .8
+                pos_hint: {'center_x': 0.50, 'center_y': 0.65}
+                text: 'PADRÃO MEGA BLAZE'
+                font_size: 12
+                halign: "center"
+                md_bg_color: 0.95, 0.17, 0.30
+                text_color: (255,255,255)
+                line_color: (0.95, 0.17, 0.30)
+                bold: True
+                theme_text_color: 'Custom'
+                focus_color: app.theme_cls.accent_color
+                unfocus_color: app.theme_cls.primary_color
+                on_press: root.chamando_tela_megablaze(self.text)
+
+            ButtonFocus:
+                #bold: True
+                elevation: 1
+                size_hint_x: .8
+                pos_hint: {'center_x': 0.50, 'center_y': 0.55}
+                text: 'PADRÃO 4(QUATRO) DIGITOS'
+                font_size: 12
+                halign: "center"
+                md_bg_color: 0.95, 0.17, 0.30
+                text_color: (255,255,255)
+                line_color: (0.95, 0.17, 0.30)
+                bold: True
+                theme_text_color: 'Custom'
+                focus_color: app.theme_cls.accent_color
+                unfocus_color: app.theme_cls.primary_color
+                on_press: root.chamando_tela_3(self.text)
+
+
+            ButtonFocus:
+                #bold: True
+                elevation: 1
+                # size_hint_x: .8
+                size_hint_x: .8
+                pos_hint: {'center_x': 0.50, 'center_y': 0.45}
+                text: 'PADRÃO 7(SETE) DIGITOS   '
+                font_size: 12
+                halign: "center"
+                md_bg_color: 0.95, 0.17, 0.30
+                text_color: (255,255,255)
+                line_color: (0.95, 0.17, 0.30)
+                bold: True
+                theme_text_color: 'Custom'
+                focus_color: app.theme_cls.accent_color
+                unfocus_color: app.theme_cls.primary_color
+                on_press: root.jogada_padrao_sete()
+
+            ButtonFocus:
+                #bold: True
+                elevation: 1
+                size_hint_x: .8
+                pos_hint: {'center_x': 0.50, 'center_y': 0.35}
+                text: 'PADRÃO 9(NOVE) DIGITOS  '
+                font_size: 12
+                halign: "center"
+                md_bg_color: 0.95, 0.17, 0.30
+                text_color: (255,255,255)
+                line_color: (0.95, 0.17, 0.30)
+                bold: True
+                theme_text_color: 'Custom'
+                focus_color: app.theme_cls.accent_color
+                unfocus_color: app.theme_cls.primary_color
+                on_press: root.jogada_padrao_nove()
+
+
+
+            MDLabel:
+                pos_hint: {"center_x": .5, "center_y": .22}
+                halign: "center"
+                text: "Jogadada Personalizada:"
+                font_size: 12
+                theme_text_color: "Custom"
+                text_color: (1,1,1,1)
+
+
+            ButtonFocus:
+                spacing: 1
+                pos_hint: {'center_x': .5, 'center_y': .15}
+                text: 'Personalizar jogo'
+                font_size: 12
+                halign: "center"
+                md_bg_color: 0.02, 0.83, 0.49
+                text_color: (255,255,255)
+                line_color: (1, 1, 1)
+                bold: True
+                theme_text_color: 'Custom'
+                focus_color: app.theme_cls.accent_color
+                unfocus_color: app.theme_cls.primary_color
+                on_release: app.ron_release: root.jogada_personalizada()
+
+
+
+
+<RobotoButton@Button>:
+    font_name: 'Roboto'
+    font_size: 25
+    bold: True
+    border: (2, 2, 2, 2)
+
+
+
+<tela_mega_digitos>:
+    name: "tela_mega_digitos"
+    font_name: 'Roboto'
+    font_size: 60
+    markup: True
+
+    ScrollView:
+        line_color: (.95,.44,.49,1)
+        size: self.size
+        pos: self.pos
+
+
+        MDFloatLayout:
+            md_bg_color: 0.06, 0.10, 0.14
+            orientation: "vertical"
+
+
+            MDCard:
+                orientation: "vertical"
+                pos_hint: {'center_x': 0.50, 'center_y': 0.96}
+                size_hint_y: .1
+                md_bg_color: 0.95, 0.17, 0.30
+                text_color: (255,255,255)
+                line_color: (0.95, 0.17, 0.30)
+                bold: True
+                elevation: 1
+
+                MDIconButton:
+                    size_hint_x: .1
+                    icon: "keyboard-backspace"
+                    on_press: app.root.current = "Tela_PrincipalScreen"
+                    on_press: root.desativar_jogo_mega_digitos()
+                    focus_color: app.theme_cls.accent_color
+                    unfocus_color: app.theme_cls.primary_color
+
+            MDLabel:
+                halign: "center"
+                text: "SISTEMA DE ANALISES"
+                theme_text_color: 'Custom'
+                text_color: 255,0,0
+                elevation: 3
+                font_size: "16sp"
+                pos_hint: {'center_x': 0.50, 'center_y': 0.96}
+
+            MDLabel:
+                id: qualsequencia
+                halign: "center"
+                pos_hint: {'center_x': 0.50, 'center_y': 0.93}
+                text: "sequencia de MEGA(ALEATORIO)"
+                theme_text_color: 'Custom'
+                text_color: 255,0,0
+                font_size: "12sp"
+
+
+            Image:
+                source: "app_icon_xxxhdpi.png"
+                pos_hint: {'center_x': 0.5, 'center_y': 0.80}
+                size_hint: (0.4, 0.2)
+                allow_stretch: True
+                elevation: 1
+
+
+
+
+            ButtonFocus:
+                bold: True
+                elevation: 1
+                pos_hint: {'center_x': 0.12, 'center_y': 0.77}
+                text: 'Historico'
+                font_size: 12
+                halign: "center"
+                md_bg_color: 0.95, 0.17, 0.30
+                text_color: (255,255,255)
+                line_color: (0.95, 0.17, 0.30)
+                theme_text_color: 'Custom'
+                focus_color: app.theme_cls.accent_color
+                unfocus_color: app.theme_cls.primary_color
+                on_press: root.historico()
+
+            ButtonFocus:
+                pos_hint: {'center_x': 0.88, 'center_y': 0.77}
+                text: 'APOSTADO'
+                font_size: 12
+                halign: "center"
+                md_bg_color: 0.95, 0.17, 0.30
+                text_color: (255,255,255)
+                line_color: (0.95, 0.17, 0.30)
+                bold: True
+                elevation: 1
+                theme_text_color: 'Custom'
+                focus_color: app.theme_cls.accent_color
+                unfocus_color: app.theme_cls.primary_color
+                on_press: root.abrir_card_dinheiro()
+
+
+
+            MDLabel:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+                halign: "center"
+                text: "Tempo de Analise"
+                theme_text_color: 'Custom'
+                bold: True
+                text_color: .61, 0.68, 0.69
+                font_size: "12sp"
+
+
+
+            MDLabel:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.64}
+                id: stopwatch
+                markup: True
+                halign: "center"
+                text: '00:00.[size=30]00[/size]'
+                elevation: 1
+                theme_text_color: 'Custom'
+                text_color: .61, 0.68, 0.69
+                font_size: "14sp"
+
+
+            MDBoxLayout:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.60}
+                orientation: "horizontal"
+                MDLabel:
+                    halign: "center"
+                    text: "RESULTADO/COR:"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: .61, 0.68, 0.69
+                    font_size: "12sp"
+
+
+                MDLabel:
+                    id: resultado_cor
+                    halign: "center"
+                    text: "aguardando"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: .61, 0.68, 0.69
+                    font_size: "14sp"
+
+            MDBoxLayout:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.54}
+                orientation: "horizontal"
+                MDLabel:
+                    halign: "center"
+                    text: "  RESULTADO/NUM:"
+                    theme_text_color: 'Custom'
+                    bold: True
+                    text_color: .61, 0.68, 0.69
+                    font_size: "12sp"
+
+
+                MDLabel:
+                    id: resultado
+                    halign: "center"
+                    text_autoupdate: True
+                    bold: True
+                    text: "Aguardando"
+                    theme_text_color: 'Custom'
+                    text_color: .61, 0.68, 0.69
+                    font_size: "14sp"
+            MDBoxLayout:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.45}
+                orientation: "vertical"
+                padding: 0,1
+                size_hint: (0.5, 0.07)
+                line_color: (0.15, 0.18, 0.24)
+                MDBoxLayout:
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.45}
+                    orientation: "vertical"
+                    padding: 2
+                    bold: True
+                    md_bg_color: 0.15, 0.18, 0.24
+
+                    MDLabel:
+                        id: giro
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.22}
+                        halign: "center"
+                        text: "AGUARDANDO GIROS"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: .61, 0.68, 0.69
+                        font_size: "15sp"
+
+
+            MDProgressBar:
+                line_color: (0.61, 0.68, 0.69)
+                pos_hint: {'center_x': 0.5, 'center_y': 0.40}
+                id:progress_bar
+                min:0
+                size_hint_x: .5
+                size_hint_y: .035
+                max:100
+                value:20
+                color: 0.95, 0.17, 0.30
+                elevation: 1
+
+
+            MDBoxLayout:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.35}
+                orientation: "vertical"
+                padding: 0,1
+                line_color: (0.15, 0.18, 0.24)
+                size_hint: (0.5, 0.07)
+                MDBoxLayout:
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.30}
+                    orientation: "vertical"
+                    padding: 2
+                    bold: True
+                    md_bg_color: 0.15, 0.18, 0.24
+                    MDLabel:
+                        id: entradas_disponiveis
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.30}
+                        halign: "center"
+                        text: "ENTRADAS INDISPONIVEIS NO MOMENTO, AGUARDE....."
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: .61, 0.68, 0.69
+                        font_size: "11sp"
+
+
+            MDBoxLayout:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.30}
+                orientation: "vertical"
+                padding: 0,1
+                line_color: (0.15, 0.18, 0.24)
+                size_hint: (0.5, 0.05)
+                MDBoxLayout:
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.30}
+                    orientation: "vertical"
+                    padding: 2
+                    bold: True
+                    md_bg_color: 0.6, 0.10, 0.14
+                    MDLabel:
+                        id: acertividade
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.30}
+                        halign: "center"
+                        text: "VERMELHO:32%"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: .61, 0.68, 0.69
+                        font_size: "10sp"
+
+            MDBoxLayout:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.25}
+                orientation: "vertical"
+                padding: 0,1
+                line_color: (.06, 0.10, 0.14)
+                size_hint: (0.5, 0.05)
+                MDBoxLayout:
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.25}
+                    orientation: "vertical"
+                    padding: 2
+                    bold: True
+                    md_bg_color: 0.15, 0.18, 0.24
+                    MDLabel:
+                        id: acertividade1
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.25}
+                        halign: "center"
+                        text: "PRETO:32%"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: .61, 0.68, 0.69
+                        font_size: "10sp"
+            MDBoxLayout:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.20}
+                orientation: "vertical"
+                padding: 0,1
+                line_color: (.06, 0.10, 0.14)
+                size_hint: (0.5, 0.05)
+                MDBoxLayout:
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.20}
+                    orientation: "vertical"
+                    padding: 2
+                    bold: True
+                    md_bg_color: 0.50, 0.50, 0.50
+                    MDLabel:
+                        id: acertividade2
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.20}
+                        halign: "center"
+                        text: "BRANCO:32%"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: .06, 0.10, 0.14
+                        font_size: "10sp"
+
+
+            MDBoxLayout:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.15}
+                orientation: "vertical"
+                padding: 2
+                bold: True
+                #line_color: (0.61, 0.68, 0.69)
+
+                MDBoxLayout:
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.12}
+                    orientation: "vertical"
+                    padding: 2
+                    bold: True
+                    width: 100
+
+
+
+                    MDLabel:
+                        id: ligadesliga
+
+                        pos_hint: {'center_x': 0.5, 'center_y': 0.12}
+                        halign: "center"
+                        text: "APOSTAS DESATIVADAS"
+                        theme_text_color: 'Custom'
+                        bold: True
+                        text_color: 0.61, 0.68, 0.69
+                        font_size: "12sp"
+
+            ButtonFocus:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.05}
+                size_hint_x: .8
+                id:"iniciaraposta"
+                text: 'Iniciar Aposta'
+                font_size: 12
+                halign: "center"
+                md_bg_color: 0.61, 0.68, 0.69
+                text_color: (255,255,255)
+                line_color: (0.61, 0.68, 0.69)
+                theme_text_color: 'Custom'
+                focus_color: app.theme_cls.accent_color
+                unfocus_color: app.theme_cls.primary_color
+                on_press: root.abrir_card()
+                id: start_stop
+                on_press: root.start_stop()
+                elevation: 1
+
+
+<tela_aposta_mega>:
+    name: "valor_mega"
+    font_name: 'Roboto'
+    font_size: 60
+    markup: True
+    size_hint: .7, .8
+    md_bg_color: 0.06, 0.10, 0.14
+    line_color: (0.61, 0.68, 0.69)
+    pos_hint: {'center_x': .5, 'center_y': .5}
+    MDBoxLayout:
+        #md_bg_color: 0.06, 0.10, 0.14
+        orientation: "vertical"
+        spacing: 1
+
+        MDIconButton:
+            theme_text_color: 'Custom'
+            icon: 'close'
+            text_color: 1, 1, 1, 1
+            on_release: root.desativar_jogo_mega_digitos()
+        MDCard:
+            size_hint_y: .1
+            orientation: "vertical"
+            pos_hint: {"center_x": .5, "center_y": .60}
+            size_hint_y: .1
+            padding: [25, 0, 25, 0]
+            md_bg_color: 0.06, 0.10, 0.14
+            #line_color: (.95,.44,.49,1)
+            line_color_normal: (0,1,0,1)
+
+            MDBoxLayout:
+                halign: "center"
+                orientation: "vertical"
+
+                MDBoxLayout:
+                    halign: "center"
+                    orientation: "horizontal"
+                    MDTextField:
+                        pos_hint: {'center_x': 0.50, 'center_y': 0.72}
+                        id: stop_input
+                        width: 100
+                        font_size: "12sp"
+                        hint_text: 'Limite/Wins:'
+                        mode: 'rectangle'
+                        color: (0,1,1,1)
+                        line_color_normal: (0,1,0,1)
+                        text_color: (.95,.44,.49,1)
+
+                    MDTextField:
+                        pos_hint: {'center_x': 0.50, 'center_y': 0.72}
+                        id: stop1_input
+                        width: 100
+                        font_size: "12sp"
+                        hint_text: 'Limite/Loss:'
+                        mode: 'rectangle'
+                        color: (0,1,1,1)
+                        line_color_normal: (0,1,0,1)
+                        text_color: (.95,.44,.49,1)
+
+                MDTextField:
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.72}
+                    id: G0_input
+                    width: 100
+                    font_size: "12sp"
+                    hint_text: '1° ENTRADA:'
+                    mode: 'rectangle'
+                    color: (0,1,1,1)
+                    line_color_normal: (0,1,0,1)
+                    text_color: (.95,.44,.49,1)
+
+                MDTextField:
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.67}
+                    id: G1_input
+                    width: 100
+                    font_size: "12sp"
+                    hint_text: '2° ENTRADA:'
+                    mode: 'rectangle'
+                    color: (0,1,1,1)
+                    line_color_normal: (0,1,0,1)
+                    text_color: (.95,.44,.49,1)
+
+                MDTextField:
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.64}
+                    id: G2_input
+                    width: 100
+                    font_size: "12sp"
+                    hint_text: '3° ENTRADA:'
+                    mode: 'rectangle'
+                    color: (0,1,1,1)
+                    line_color_normal: (0,1,0,1)
+                    text_color: (.95,.44,.49,1)
+
+                MDTextField:
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.61}
+                    id: BRANCO_input
+                    width: 100
+                    font_size: "12sp"
+                    hint_text: '1° Branco:'
+                    mode: 'rectangle'
+                    color: (0,1,1,1)
+                    line_color_normal: (0,1,0,1)
+                    text_color: (.95,.44,.49,1)
+
+                MDTextField:
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.58}
+                    id: BRANCO_inputG1
+                    width: 100
+                    font_size: "12sp"
+                    hint_text: '2° Branco:'
+                    mode: 'rectangle'
+                    color: (0,1,1,1)
+                    line_color_normal: (0,1,0,1)
+                    text_color: (.95,.44,.49,1)
+
+                MDTextField:
+                    pos_hint: {'center_x': 0.50, 'center_y': 0.50}
+                    id: BRANCO_inputG2
+                    width: 100
+                    font_size: "12sp"
+                    hint_text: '3°Branco:'
+                    mode: 'rectangle'
+                    color: (0,1,1,1)
+                    line_color_normal: (0,1,0,1)
+                    text_color: (.95,.44,.49,1)
+
+                MDBoxLayout:
+                    halign: "center"
+                    orientation: "horizontal"
+                    width: 100
+                    padding: 3
+
+                    ButtonFocus:
+                        width: 100
+                        padding: 3
+                        id: jogar_sequencia_mega
+                        pos_hint: {'center_x': .5, 'center_y': .45}
+                        size_hint_x: .9
+                        text: 'APOSTAR!'
+                        md_bg_color: 0.95, 0.17, 0.30
+                        text_color: (255,255,255)
+                        line_color: (0.95, 0.17, 0.30)
+                        bold: True
+                        on_press: root.jogar_sequencia_mega()
+
